@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background: white;
+    background:url("../1347419.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 97.5%;
+    margin: 0 auto;
+    
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color:rgba(2, 133, 133, .3);;
+    border-bottom: 1px solid #dee2e6!important;
+    
+}
+.manu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.main {
+    min-height: 500px;
+    
+}
+.box{
+   
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(238, 245, 245, 0.2);
+   box-shadow: 0 4px 8px 0 rgba(251, 253, 252, 0.5), 0 6px 20px 0 rgba(248, 248, 248, 0.5);
+    text-align: center;
+    
+}
+.menu-item {
+    
+    padding: 0;
+    margin: 0;
+    
+}
+.nav-link{
+    display: block;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 16px;
+    color: black;
+}
+.nav-link:hover{
+    background-color: rgb(60, 198, 223);
+    color: white;
+    
+}
+.brand {
+    width: 180px;
+    font-weight: 700;
+}
+.card {
+    background-color: rgba(253, 253, 253, .3);
+    border-radius: .375rem;
+    margin: 25px 30px;
+    padding: 1.5rem;
+}
+.card p {
+    margin-top: 10px;
+    color: white
+}
+/*
+form
+*/
+.frm {
+    margin-top: 25px;
+    
+}
+.fld {
+    margin-bottom: .55rem;
+    display: flex;
+    align-items: center;
+    
+}
+.lbl {
+    width: 150px;
+    text-align: right;
+    margin-right: .5rem;
+    color: white;
+    color: black;
+}
+.ctrl {
+    width: 350px;
+    padding: .45rem;
+    border: solid 1px #ccc;
+    border-radius: .375rem;
+}
+.ctrl[type=file] {
+    width: 350px;
+    padding: 0;
+    border: solid 1px #ccc;
+    border-radius: .375rem;
+}
+.ctrl::file-selector-button{
+   padding: 0.375rem 0.75rem;
+   border-radius: .375rem 0 0 .375rem; 
+   background-color: #ddabd9;
+   border-width: 0;
+}
+.btn {
+    font-weight: 400;
+    background-color: #acc571;
+    padding: .375rem 1rem;
+    border: solid 1px #ccc;
+    border-radius: .25rem;
+}
+
+.success{
+    background-color: rgb(11, 178, 184);
+    color: white;
+}
+.success:hover{
+    background-color: rgb(170, 43, 43);
+}
+.thumb{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+footer{
+    margin: 0;
+    padding: 10px 30px;
+    height: 105px;
+    border-top: 1px solid gray;
+    background-color:rgba(2, 133, 133, .3);
+    color: white;
+    
+}
+#msg{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: solid 1px rgb(231, 154, 154);
+    margin: 15px;
+    border-radius: .5rem;
+}
+#msg h5{
+      width: 100%;
+}
+#p{
+    width: 120px;
+    padding: 5px;
+}
+#error{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: solid 1px #ccc;
+    margin: 15px;
+    border-radius: .5rem;
+    padding: 15px;
+    color: rgb(190, 63, 63);
+    
+}
+#error h5{
+    width: 100%;
+    
+}
+.data{
+    color: rgb(226, 111, 178);
+    padding-left: 120px;
+    font-size: 1.2rem;
+}
+#hade{
+    margin-top: 15px;
+    margin-left: 100px;
+    color: white;
+}
+.AirBus{
+
+    width: 40px;
+    border-radius: 1rem;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+    
+}
+header{
+    background: url("../5.jpeg")!important;
+    height: 100vh;
+    -webkit-background:cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration:none;
+    padding: 5px 20px;
+    font-size: 16px;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.logo img{
+   
+    margin-top: 20px;
+    width: 200px;
+    height: 150px;
+    float: left;
+    border-radius: 3rem;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+     
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+     
+}
+.welcome-text a{
+   border: solid 1px #fff;
+   padding: 10px 25px;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 14px;
+   margin-top: 20px;
+   margin-left: 40%;
+   display: inline-block;
+   color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color:#000;
+}

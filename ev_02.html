@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence Exam</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="manu">
+
+            <li class="manu-item"><a href="./index.html" class="nav-link brand">AirBus info</a></li>
+            <li class="manu-item"><a href="./home.html" class="nav-link">Home</a></li>
+            <li class="manu-item"><a href="./ev_01.html" class="nav-link">Ragistration</a></li>
+            <li class="manu-item"><a href="./ev_02.html" class="nav-link">Booking</a></li>
+
+        </ul>
+    </nav>
+    <div class="container main">
+        <div id="d1">
+            <h3>Biman Bangladesh Airlines</h3>
+        </div>
+        <div id="d2">
+            <h3>Biman Canadian Airlines</h3>
+        </div>
+        <div id="d3">
+            <h3>Biman USA Airlines</h3>
+        </div>
+        <div id="d4">
+            <h3>Biman Saudi Arabia Airlines</h3>
+        </div>
+    </div>
+    <footer class="container">Footer</footer>
+    <script>
+        var emp = { id: 5001,  name: "passenger 01", cost: 90000.0 };
+        function Employee(id, name, cost) {
+            this.id = id;
+            this.name = name;
+            this.cost = cost;
+        }
+        Employee.prototype.info = function () {
+            return `Set. No: ${this.id}<br>
+                   Passenger. Name: ${this.name}<br />
+                   Cost: ${this.cost}`;
+        };
+        function createEmployee(id, name, cost) {
+            var obj = {};
+            obj.id = id;
+            obj.name = name;
+            obj.cost = cost;
+            obj.info = function () {
+                return `Set. No: ${this.id}<br>
+                    Passenger. Name: ${this.name}<br />
+                    Cost: ${this.cost}`;
+            };
+            return obj;
+        }
+        function Person(name) {
+            this.name = name;
+        }
+        Person.prototype.info = function () {
+            return `${this.name}`;
+        };
+        Person.prototype = new Person(); //to intact prototype chain
+        function Trainee(name, course) {
+            Person.call(this, name);
+            this.course = course;
+        }
+        Trainee.prototype.info = function () {
+            return `${this.name} ${this.course}`;
+        };
+        document.getElementById("d1").innerHTML += `Set. No: ${emp.id}<br>
+                                                   Passenger. Name: ${emp.name}<br />
+                                                   Cost: ${emp.cost}`;
+        var emp1 = new Employee(7402, "passenger 02", 20000.0);
+        var emp2 = createEmployee(8806, "passenger 03", 25000.0);
+
+        var p1 = new Person('P1');
+        var t1 = new Trainee('P2', 'C#');
+        document.getElementById("d2").innerHTML += emp1.info();
+        document.getElementById("d3").innerHTML += emp2.info();
+        document.getElementById("d4").innerHTML += p1.info();
+        document.getElementById("d4").innerHTML += "<br />";
+        document.getElementById("d4").innerHTML += t1.info();
+    </script>
+</body>
+
+</html>
